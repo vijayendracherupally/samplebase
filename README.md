@@ -8,7 +8,6 @@
 
 <body>
 
-<h1>TextMorph — Full README (Clean HTML Version)</h1>
 <p>AI-powered content simplification, summarization & paraphrasing — domain-aware, Streamlit-based.</p>
 
 <nav>
@@ -201,3 +200,4 @@ TextMorph/
 
 </body>
 </html>
+
