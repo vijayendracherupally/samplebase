@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TextMorph — Clean README</title>
 </head>
 
 <body>
 
-<p>AI-powered content simplification, summarization & paraphrasing — domain-aware, Streamlit-based.</p>
+<h1>AI-powered content simplification, summarization & paraphrasing — domain-aware, Streamlit-based.</h1>
 
 <nav>
   <a href="#usage">Get Started</a> |
@@ -200,4 +199,5 @@ TextMorph/
 
 </body>
 </html>
+
 
