@@ -7,7 +7,8 @@
 
 <body>
 
-<h1>AI-powered content simplification, summarization & paraphrasing — domain-aware, Streamlit-based.</h1>
+<h1>✨ TextMorph — AI-powered Content Simplification, Summarization & Paraphrasing</h1>
+<p>Transform long and complex text into clear, readable content using modern NLP models. Simple UI, powerful backend. 🚀</p>
 
 <nav>
   <a href="#usage">Get Started</a> |
@@ -18,46 +19,46 @@
 
 <hr>
 
-<h2 id="overview">Overview</h2>
-<p>TextMorph is a modular NLP suite built to transform complex domain text into clear, readable outputs using transformer models tuned per-domain.</p>
+<h2 id="overview">📘 Overview</h2>
+<p>TextMorph is a lightweight NLP suite designed to simplify, rewrite, and summarize text with AI. Built with practical components and easy expandability.</p>
 
 <ul>
-  <li>Streamlit UI</li>
-  <li>Hugging Face Transformers</li>
-  <li>FLAN-T5 (domain)</li>
-  <li>SQLite / Logs</li>
-  <li>Docker-ready</li>
+  <li>⚡ Streamlit UI</li>
+  <li>🧠 Hugging Face Transformers</li>
+  <li>🎯 FLAN-T5 (domain-aware)</li>
+  <li>🗂️ SQLite for storage</li>
+  <li>🐳 Docker-ready design</li>
 </ul>
 
 <hr>
 
-<h2 id="features">Key Features</h2>
+<h2 id="features">🔧 Key Features</h2>
 
-<h3>User Features</h3>
+<h3>👤 User Features</h3>
 <ul>
-  <li>Secure Authentication — JWT login, registration, OTP recovery.</li>
-  <li>Readability Analyzer — Flesch, Gunning Fog, SMOG, Coleman-Liau.</li>
-  <li>Summarization — length control; domain-aware prompts.</li>
-  <li>Paraphrasing — simple / neutral / advanced styles.</li>
-  <li>Side-by-Side Comparison — original vs output.</li>
-  <li>Feedback & History — ratings, comments, exports.</li>
-  <li>Profile Management — password change, validation.</li>
+  <li>🔐 Secure Authentication — JWT login, registration, OTP recovery.</li>
+  <li>📊 Readability Analyzer — Flesch, Gunning Fog, SMOG, Coleman-Liau.</li>
+  <li>📝 Summarization — short / medium / long lengths.</li>
+  <li>🔄 Paraphrasing — simple, neutral, advanced styles.</li>
+  <li>🆚 Side-by-Side Comparison.</li>
+  <li>💾 History & ⭐ Feedback system.</li>
+  <li>⚙️ Profile Management.</li>
 </ul>
 
-<h3>Admin Features</h3>
+<h3>🛠️ Admin Features</h3>
 <ul>
-  <li>Model Management — load domain models from Drive.</li>
-  <li>Account Limits — max admin accounts.</li>
-  <li>Usage Analytics — visual reports.</li>
-  <li>Feedback Monitoring — sentiment analysis.</li>
-  <li>Global Search — search all histories.</li>
-  <li>Full Audit View — inputs/outputs.</li>
-  <li>Hot-swap Models — reload at runtime.</li>
+  <li>📥 Load domain-specific models.</li>
+  <li>👑 Admin account limits.</li>
+  <li>📈 Usage Analytics.</li>
+  <li>💬 Feedback monitoring.</li>
+  <li>🔍 Global search in history.</li>
+  <li>🧾 Full audit visibility.</li>
+  <li>♻️ Hot-swap models.</li>
 </ul>
 
 <hr>
 
-<h2 id="installation">Installation</h2>
+<h2 id="installation">⚙️ Installation</h2>
 
 <pre>
 git clone &lt;repository-link&gt;
@@ -66,7 +67,7 @@ pip install -r requirements.txt
 streamlit run app.py
 </pre>
 
-<p>Models are expected in Google Drive:</p>
+<p>📁 Models should be stored in Google Drive:</p>
 
 <pre>/content/drive/MyDrive/flan_models/</pre>
 
@@ -74,95 +75,95 @@ streamlit run app.py
 
 <hr>
 
-<h2 id="usage">Usage Guide</h2>
+<h2 id="usage">🚀 Usage Guide</h2>
 
 <ol>
-  <li>Run: <code>streamlit run app.py</code></li>
-  <li>Create/login account</li>
-  <li>Select domain & load model</li>
-  <li>Enter text or upload file</li>
-  <li>Select Summarize / Paraphrase</li>
-  <li>Review results</li>
-  <li>Save history; give feedback</li>
-  <li>Admins can view analytics and logs</li>
+  <li>Run the app: <code>streamlit run app.py</code> ⚡</li>
+  <li>Create/login account 🔐</li>
+  <li>Select domain & load model 🎯</li>
+  <li>Paste text or upload file 📄</li>
+  <li>Choose Summarize / Paraphrase 🔄</li>
+  <li>Review results ✨</li>
+  <li>Save history & give feedback ⭐</li>
+  <li>Admins view analytics 📊</li>
 </ol>
 
 <hr>
 
-<h2 id="architecture">Architecture</h2>
-<p>Streamlit frontend + Python backend using Transformers. SQLite for history and logs. Drive for model storage.</p>
+<h2 id="architecture">🏗️ Architecture</h2>
+<p>Simple and modular architecture focusing on accessibility and performance.</p>
 
 <table>
 <tr><th>Component</th><th>Responsibility</th></tr>
-<tr><td>Streamlit UI</td><td>User interaction & admin panel</td></tr>
-<tr><td>ML Engine</td><td>Tokenization & text generation</td></tr>
-<tr><td>Google Drive</td><td>Model storage</td></tr>
-<tr><td>SQLite</td><td>History & feedback</td></tr>
+<tr><td>🌐 Streamlit UI</td><td>User interaction & admin panel</td></tr>
+<tr><td>🤖 ML Engine</td><td>Tokenization & generation</td></tr>
+<tr><td>🔒 Google Drive</td><td>Model storage</td></tr>
+<tr><td>🗄️ SQLite</td><td>History & feedback</td></tr>
 </table>
 
 <hr>
 
-<h2 id="models">Models & Loading</h2>
+<h2 id="models">🧩 Models & Loading</h2>
 
 <table>
 <tr><th>Model</th><th>Purpose</th><th>Notes</th></tr>
-<tr><td>FLAN-T5 (domain)</td><td>Summarization & paraphrasing</td><td>Fine-tuned per domain</td></tr>
-<tr><td>Pegasus</td><td>Summarization</td><td>Optional</td></tr>
-<tr><td>BART</td><td>Balance between rewrite & summary</td><td>Optional</td></tr>
-<tr><td>NLTK</td><td>Readability metrics</td><td>Flesch, SMOG, Fog</td></tr>
+<tr><td>FLAN-T5</td><td>Summarization & paraphrasing</td><td>Domain tuned</td></tr>
+<tr><td>Pegasus</td><td>Abstractive summarization</td><td>Optional</td></tr>
+<tr><td>BART</td><td>Balanced rewrite</td><td>Optional</td></tr>
+<tr><td>NLTK</td><td>Readability scoring</td><td>Stats-based</td></tr>
 </table>
 
 <hr>
 
-<h2 id="datasets">Datasets & Evaluation</h2>
+<h2 id="datasets">📚 Datasets & Evaluation</h2>
 
 <ul>
-  <li>WikiAuto — simplification</li>
-  <li>Newsela — grade-level rewriting</li>
-  <li>ASSET — paraphrasing benchmark</li>
+  <li>📘 WikiAuto — simplification</li>
+  <li>📰 Newsela — readability levels</li>
+  <li>📝 ASSET — paraphrasing</li>
 </ul>
 
-<p>Metrics: ROUGE-L, BLEU, readability shifts.</p>
+<p>📏 Metrics used: ROUGE-L, BLEU, Readability delta.</p>
 
 <hr>
 
-<h2 id="roadmap">Roadmap</h2>
+<h2 id="roadmap">🛣️ Roadmap</h2>
 
 <ul>
-  <li>OCR & PDF extraction</li>
-  <li>Multilingual support</li>
-  <li>Batch processing</li>
-  <li>FastAPI backend</li>
-  <li>ONNX export</li>
-  <li>Docker GPU images</li>
-</ul>
-
-<hr>
-
-<h2 id="screenshots">Screenshots (placeholders)</h2>
-<ul>
-  <li>Login</li>
-  <li>Dashboard</li>
-  <li>Graphs</li>
-  <li>Summarization View</li>
-  <li>Admin Analytics</li>
-  <li>History View</li>
+  <li>🖨️ OCR & PDF extraction</li>
+  <li>🌍 Multilingual capabilities</li>
+  <li>📦 Batch/large-file support</li>
+  <li>⚡ FastAPI backend</li>
+  <li>⚙️ ONNX acceleration</li>
+  <li>🐳 GPU-powered Docker images</li>
 </ul>
 
 <hr>
 
-<h2 id="security">Security & Privacy</h2>
-
+<h2 id="screenshots">🖼️ Screenshots (Placeholders)</h2>
 <ul>
-  <li>JWT authentication + bcrypt hashing</li>
-  <li>SMTP for OTP</li>
-  <li>Audit logs</li>
-  <li>HTTPS recommended</li>
+  <li>🔑 Login</li>
+  <li>📊 Dashboard</li>
+  <li>📈 Graphs</li>
+  <li>📝 Summarization Output</li>
+  <li>📉 Analytics Panel</li>
+  <li>📜 History View</li>
 </ul>
 
 <hr>
 
-<h2>Project Structure</h2>
+<h2 id="security">🔐 Security & Privacy</h2>
+
+<ul>
+  <li>🔑 JWT authentication</li>
+  <li>📧 OTP via SMTP</li>
+  <li>📜 Audit logs</li>
+  <li>🔒 Use HTTPS in production</li>
+</ul>
+
+<hr>
+
+<h2>📁 Project Structure</h2>
 
 <pre>
 TextMorph/
@@ -182,22 +183,20 @@ TextMorph/
 
 <hr>
 
-<h2>Team</h2>
+<h2>👥 Team</h2>
 
 <table>
 <tr><th>Name</th><th>Role</th><th>Responsibility</th></tr>
-<tr><td>Add Name</td><td>ML Engineer</td><td>Model integration</td></tr>
-<tr><td>Add Name</td><td>Backend Developer</td><td>API & Auth</td></tr>
-<tr><td>Add Name</td><td>Frontend Developer</td><td>UI/UX</td></tr>
-<tr><td>Add Name</td><td>Documentation</td><td>Reports & README</td></tr>
+<tr><td>Add Name</td><td>ML Engineer 🤖</td><td>Model integration</td></tr>
+<tr><td>Add Name</td><td>Backend Developer 🔧</td><td>API & Auth</td></tr>
+<tr><td>Add Name</td><td>Frontend Developer 🎨</td><td>UI/UX</td></tr>
+<tr><td>Add Name</td><td>Documentation ✍️</td><td>Reports & README</td></tr>
 </table>
 
 <hr>
 
-<h2>License</h2>
-<p>MIT License — free to use and modify.</p>
+<h2>📄 License</h2>
+<p>MIT License — free to use, modify and share. 👐</p>
 
 </body>
 </html>
-
-
