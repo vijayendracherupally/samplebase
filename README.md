@@ -124,35 +124,7 @@ intended purpose.
 
 <hr>
 
-<h2 id="installation">⚙️ Installation</h2>
-<p>
-Installing TextMorph is straightforward and designed to cater to users from various technical backgrounds. 
-Once the repository is downloaded, users only need to install the required Python packages through the 
-provided <code>requirements.txt</code>. The Streamlit interface requires no additional setup, and launching 
-the app opens an interactive web dashboard in the browser. 
-</p>
-<p>
-For users working on cloud platforms such as Google Colab, the system integrates seamlessly with Google 
-Drive. Models can be stored remotely, allowing users to access large fine-tuned weights without needing 
-local storage. This enables large-scale experiments and production-like workflows even on lightweight 
-devices such as Chromebooks.
-</p>
 
-<hr>
-
-<h2 id="usage">🚀 Usage Guide</h2>
-<p>
-Using TextMorph begins with authentication. Once inside, the user is guided through a streamlined workflow 
-that starts with selecting the domain or model best suited for their task. The interface supports both 
-short text entries and long-form documents. Users can select summarization length, rewriting style, tone, 
-and processing preferences before generating results. 
-</p>
-<p>
-The platform processes text in seconds, providing refined output along with structured comparisons 
-that highlight differences between the original and generated content. Users can revise input text, retry 
-operations, adjust parameters, or save the results for future use. All previous work is accessible in the 
-History panel, organized chronologically to help users track their progress over time.
-</p>
 
 <hr>
 
@@ -268,6 +240,40 @@ constantly evolving with user needs.
 
 <hr>
 
+
+<h2 id="installation">⚙️ Installation</h2>
+<p>
+Installing TextMorph is straightforward and designed to cater to users from various technical backgrounds. 
+Once the repository is downloaded, users only need to install the required Python packages through the 
+provided <code>requirements.txt</code>. The Streamlit interface requires no additional setup, and launching 
+the app opens an interactive web dashboard in the browser. 
+</p>
+<p>
+For users working on cloud platforms such as Google Colab, the system integrates seamlessly with Google 
+Drive. Models can be stored remotely, allowing users to access large fine-tuned weights without needing 
+local storage. This enables large-scale experiments and production-like workflows even on lightweight 
+devices such as Chromebooks.
+</p>
+
+<hr>
+
+<h2 id="usage">🚀 Usage Guide</h2>
+<p>
+Using TextMorph begins with authentication. Once inside, the user is guided through a streamlined workflow 
+that starts with selecting the domain or model best suited for their task. The interface supports both 
+short text entries and long-form documents. Users can select summarization length, rewriting style, tone, 
+and processing preferences before generating results. 
+</p>
+<p>
+The platform processes text in seconds, providing refined output along with structured comparisons 
+that highlight differences between the original and generated content. Users can revise input text, retry 
+operations, adjust parameters, or save the results for future use. All previous work is accessible in the 
+History panel, organized chronologically to help users track their progress over time.
+</p>
+
+
+
+
 <h2 id="license">📄 License</h2>
 <p>
 TextMorph is released under the MIT License, granting users the freedom to use, modify, and 
@@ -278,4 +284,5 @@ and personal development.
 
 </body>
 </html>
+
 
