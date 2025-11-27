@@ -268,18 +268,88 @@ original and transformed content effortlessly.
 <hr>
 
 <h2 id="security">🔐 Security & Privacy</h2>
+
 <p>
-TextMorph integrates multiple layers of security to protect user information. All passwords are 
-securely hashed before storage, ensuring that raw credentials are never exposed. JWT-based 
-authentication maintains safe and seamless user sessions, with tokens refreshed as needed. 
-For account recovery, users receive time-sensitive OTP codes that confirm their identity.
+TextMorph implements a multi-layered security model designed to protect user data and maintain a 
+responsible and trustworthy environment. The system ensures that all stored passwords are hashed using 
+strong cryptographic methods, preventing exposure of raw credentials even if the database is accessed. 
+Authentication is handled through JWT tokens, which maintain user sessions securely without requiring 
+the server to store session data. These tokens include expiry mechanisms to limit unauthorized access 
+and reduce long-term session risks. For account recovery, an OTP-based verification system is used, 
+ensuring that only legitimate users can regain access to their accounts through time-sensitive codes.
 </p>
+
 <p>
-The system keeps detailed audit logs that record essential actions such as logins, failed 
-attempts, and administrative operations. These logs provide transparency and help maintain a 
-secure environment. For production deployments, HTTPS is recommended to ensure encrypted 
-communication and prevent interception of sensitive data.
+To support transparency and responsible platform usage, the system maintains detailed audit logs that 
+record critical events such as login attempts, password-reset activity, account changes, and major 
+administrative actions. These logs allow both developers and administrators to monitor potential misuse 
+and maintain operational oversight. Although advanced deployment environments may integrate encryption 
+or additional network-level protections, the core platform itself does not require HTTPS for general 
+functionality and remains fully operational in secure offline or local environments.
 </p>
+
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; margin-top: 15px;">
+  <tr style="background-color: #f2f2f2; font-weight: bold;">
+    <th>Security Feature</th>
+    <th>Purpose</th>
+    <th>Description</th>
+  </tr>
+
+  <tr>
+    <td>Password Hashing (bcrypt)</td>
+    <td>Protect stored credentials</td>
+    <td>
+      All user passwords are transformed using bcrypt hashing before being stored. This ensures that 
+      even if the database is accessed, raw passwords cannot be recovered or misused.
+    </td>
+  </tr>
+
+  <tr>
+    <td>JWT Authentication</td>
+    <td>Session management</td>
+    <td>
+      JSON Web Tokens maintain secure, stateless sessions. Token expiry adds an additional layer of 
+      protection by limiting how long a session remains valid.
+    </td>
+  </tr>
+
+  <tr>
+    <td>OTP-Based Recovery</td>
+    <td>Account recovery</td>
+    <td>
+      Users receive temporary, time-sensitive one-time passwords via email to reset their accounts. 
+      This ensures recovery can only be performed by the legitimate user.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Audit Logging</td>
+    <td>User activity tracking</td>
+    <td>
+      Every critical system event—including login attempts, incorrect password entries, and admin 
+      operations—is stored in an audit log to support monitoring and behavioral analysis.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Admin Monitoring Tools</td>
+    <td>Platform governance</td>
+    <td>
+      Administrators have access to logs and activity summaries that help them monitor system use, 
+      identify unusual patterns, and ensure the platform is being used responsibly.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Local / Offline Friendly</td>
+    <td>Secure environments without HTTPS</td>
+    <td>
+      TextMorph functions securely in local or internal environments without requiring HTTPS. 
+      Core security features operate independently of network-level encryption.
+    </td>
+  </tr>
+</table>
+
 
 <hr>
 
@@ -338,6 +408,7 @@ and personal development.
 
 </body>
 </html>
+
 
 
 
