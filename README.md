@@ -126,9 +126,8 @@ streamlit run app.py
 <table>
 <tr><th>Model</th><th>Purpose</th><th>Notes</th></tr>
 <tr><td>FLAN-T5</td><td>Summarization & paraphrasing</td><td>Domain tuned</td></tr>
-<tr><td>Pegasus</td><td>Abstractive summarization</td><td>Optional</td></tr>
-<tr><td>BART</td><td>Balanced rewrite</td><td>Optional</td></tr>
-<tr><td>NLTK</td><td>Readability scoring</td><td>Stats-based</td></tr>
+<tr><td>Pegasus</td><td>Summarization & paraphrasing</td><td>Optional</td></tr>
+<tr><td>BART</td><td>Summarization & paraphrasing</td><td>Optional</td></tr>
 </table>
 
 <hr>
@@ -202,5 +201,6 @@ streamlit run app.py
 
 </body>
 </html>
+
 
 
