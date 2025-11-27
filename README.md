@@ -19,6 +19,24 @@
 
 <hr>
 
+
+<h2>📑 Table of Contents</h2>
+<ul>
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#features">Key Features</a></li>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#usage">Usage Guide</a></li>
+  <li><a href="#architecture">Architecture</a></li>
+  <li><a href="#models">Models & Loading</a></li>
+  <li><a href="#datasets">Datasets & Evaluation</a></li>
+  <li><a href="#roadmap">Roadmap</a></li>
+  <li><a href="#screenshots">Screenshots</a></li>
+  <li><a href="#security">Security & Privacy</a></li>
+  <li><a href="#team">Team</a></li>
+  <li><a href="#license">License</a></li>
+</ul>
+
+
 <h2 id="overview">📘 Overview</h2>
 <p>TextMorph is a lightweight NLP suite designed to simplify, rewrite, and summarize text with AI. Built with practical components and easy expandability.</p>
 
@@ -184,4 +202,5 @@ streamlit run app.py
 
 </body>
 </html>
+
 
