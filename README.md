@@ -151,7 +151,6 @@ FastAPI-based backend to separate UI from inference for improved performance and
 <hr>
 
 <h2 id="models">🧩 Models & Loading</h2>
-<h2 id="models">🧩 Models & Loading</h2>
 
 <p>
 TextMorph supports several state-of-the-art Transformer models from the Hugging Face ecosystem, each 
@@ -439,6 +438,7 @@ and personal development.
 
 </body>
 </html>
+
 
 
 
