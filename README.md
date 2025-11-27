@@ -151,20 +151,74 @@ FastAPI-based backend to separate UI from inference for improved performance and
 <hr>
 
 <h2 id="models">🧩 Models & Loading</h2>
+<h2 id="models">🧩 Models & Loading</h2>
+
 <p>
-TextMorph supports several Transformer models from the Hugging Face ecosystem. The primary model, 
-FLAN-T5, excels in both summarization and paraphrasing tasks, particularly when fine-tuned on 
-domain-specific datasets. Pegasus, known for its abstractive summarization capabilities, performs 
-well on structured, information-rich documents such as research papers or news reports. BART provides a 
-strong baseline for paraphrasing and rewriting due to its balanced encoder-decoder architecture.
+TextMorph supports several state-of-the-art Transformer models from the Hugging Face ecosystem, each 
+designed to handle specific text transformation tasks. The primary model used is <strong>FLAN-T5</strong>, a 
+highly flexible instruction-tuned model that performs exceptionally well on summarization and paraphrasing, 
+especially when fine-tuned on targeted domain datasets. <strong>Pegasus</strong> is included as a powerful option for 
+abstractive summarization, particularly effective when dealing with structured, information-rich 
+documents such as research papers, news reports, and technical explanations. <strong>BART</strong> offers a solid 
+balance in rewriting and paraphrasing, providing outputs that preserve meaning while improving fluency 
+and readability.
 </p>
+
 <p>
-Models are loaded dynamically through the Transformers library, allowing TextMorph to initialize 
-only the required models at runtime. This ensures efficient memory usage and provides flexibility for 
-adding new models without changing the core application. Custom models stored in Google Drive can be 
-loaded with a single click, enabling highly personalized workflows for different academic or 
-professional environments.
+All models are loaded dynamically through the Transformers library, meaning TextMorph initializes only 
+the models required for a given task. This makes the system memory-efficient and allows users to switch 
+between models without restarting the application. Domain-specific and custom-trained model checkpoints 
+stored in Google Drive can also be loaded seamlessly with a single click. This flexibility makes it easy 
+to create specialized workflows for academic, legal, medical, and general-purpose writing needs.
 </p>
+
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; margin-top: 15px;">
+  <tr style="background-color: #f2f2f2; font-weight: bold;">
+    <th>Model Name</th>
+    <th>Purpose</th>
+    <th>Description</th>
+  </tr>
+
+  <tr>
+    <td>FLAN-T5</td>
+    <td>Summarization & Paraphrasing</td>
+    <td>
+      FLAN-T5 is an instruction-tuned variant of T5, capable of following task-level prompts efficiently. 
+      In TextMorph, it serves as the primary engine for generating summaries, simplified text, and 
+      paraphrases, performing exceptionally well across domains after fine-tuning.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Pegasus</td>
+    <td>Abstractive Summarization</td>
+    <td>
+      Pegasus excels at producing high-quality abstractive summaries, especially for complex articles and 
+      research-focused content. Its architecture is optimized for reconstructing masked sentences, making 
+      it ideal for long-form summarization tasks.
+    </td>
+  </tr>
+
+  <tr>
+    <td>BART</td>
+    <td>Paraphrasing & Rewriting</td>
+    <td>
+      With its bidirectional encoder and autoregressive decoder, BART generates fluent and coherent 
+      paraphrases. It is highly effective for rewriting text while maintaining its original meaning.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Custom FLAN-T5 Models</td>
+    <td>Domain-Specific NLP Tasks</td>
+    <td>
+      Users can store custom fine-tuned FLAN-T5 models in Google Drive and load them directly from the 
+      interface. These models offer improved performance for domain-sensitive tasks such as academic, 
+      medical, or legal rewriting and summarization.
+    </td>
+  </tr>
+</table>
+
 
 <hr>
 
@@ -284,5 +338,6 @@ and personal development.
 
 </body>
 </html>
+
 
 
