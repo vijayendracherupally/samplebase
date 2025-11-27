@@ -71,41 +71,56 @@ content teams, and enterprise environments.
 <h2 id="features">🔧 Key Features</h2>
 
 <h3>👤 User Features</h3>
+
 <p>
-TextMorph provides a smooth and intuitive experience for everyday users. Upon logging in, users enter a 
-personal workspace that stores their previous transformations, preferences, and history. The core 
-functionality revolves around text input—either by pasting content or uploading files. The system supports 
-PDFs, documents, and plain text, automatically extracting readable content for processing. Once the text 
-is loaded, users can choose from several transformation modes, such as summarization, rewriting, or 
-simplification.
-</p>
-<p>
-Each transformation is performed using advanced NLP models capable of understanding both context and 
-semantic meaning. The output is shown alongside the original text, making it easier for users to compare 
-changes. The readability analysis component creates a detailed breakdown of sentence complexity, reading 
-difficulty, and structural flow, helping users refine or better understand the generated content.
-</p>
-<p>
-A built-in feedback system allows users to express how helpful a generated result was. This feedback 
-can guide future development and model adjustments. Combined with automatic history saving, users have 
-access to a complete record of their transformations, enabling long-term use for research, writing, or 
-study tasks.
+TextMorph offers a smooth and refined experience tailored for everyday users who want powerful text 
+transformation tools without dealing with technical complexity. The platform guides users through an 
+intuitive workflow where they can paste or upload content, choose how they want it transformed, and 
+instantly view clean, structured results. Every feature is designed to help users process information 
+more efficiently—whether summarizing research papers, simplifying complex articles, or paraphrasing 
+content for better clarity. The system stores previous results, tracks readability metrics, and 
+provides a convenient side-by-side comparison for easier evaluation. Overall, the goal is to make 
+writing and comprehension faster, clearer, and more accessible.
 </p>
 
+<ul>
+  <li>Secure login with JWT-based authentication.</li>
+  <li>Easy-to-use input system for pasting or uploading documents.</li>
+  <li>Summarization with adjustable lengths (short, medium, long).</li>
+  <li>Paraphrasing in simple, neutral, and advanced tones.</li>
+  <li>Real-time readability analysis with detailed scoring.</li>
+  <li>Side-by-side comparison of original and generated text.</li>
+  <li>Automatic saving of history for later access.</li>
+  <li>Feedback system to rate and improve results.</li>
+  <li>Support for PDF and text extraction for long documents.</li>
+</ul>
+
+<hr>
+
 <h3>🛠️ Admin Features</h3>
+
 <p>
-Administrators have access to a more comprehensive dashboard where they can monitor the entire platform's 
-activity. They can upload new domain-specific models, ensuring the system evolves as new datasets or 
-applications arise. Admins can observe user engagement, track model performance, analyze trending topics, 
-and study the types of content being processed. These insights help maintain the quality and relevance of 
-the system's outputs.
+Administrators have deeper control over TextMorph, allowing them to manage the platform’s operations, 
+monitor user activity, and optimize performance. The admin environment provides analytical dashboards 
+that reveal how the system is being used, what models are performing well, and which areas may require 
+updates or improvements. Admins can upload new domain-specific models, configure permissions, track 
+feedback from users, and maintain detailed audit logs. By managing models, monitoring usage patterns, 
+and ensuring system security, administrators keep TextMorph efficient, reliable, and aligned with its 
+intended purpose.
 </p>
-<p>
-Security logs and audit trails allow administrators to review important actions, such as logins, failed 
-attempts, and system adjustments. The global search tool lets admins locate any previous summaries or 
-paraphrases, helping with compliance or academic monitoring when needed. Limiting the number of admin 
-accounts enhances security and ensures that the system is managed responsibly.
-</p>
+
+<ul>
+  <li>Ability to upload and load domain-specific FLAN-T5 models.</li>
+  <li>Administrative access for managing user accounts.</li>
+  <li>Usage analytics with charts and real-time insights.</li>
+  <li>Full access to global history with advanced search filters.</li>
+  <li>Feedback monitoring to understand model strengths and weaknesses.</li>
+  <li>Audit logging for tracking critical user and system actions.</li>
+  <li>Model hot-swapping without restarting the app.</li>
+  <li>Strict limit of two super-admin accounts for security.</li>
+  <li>Tools for monitoring workflow patterns and platform performance.</li>
+</ul>
+
 
 <hr>
 
@@ -263,3 +278,4 @@ and personal development.
 
 </body>
 </html>
+
