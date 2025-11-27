@@ -354,13 +354,44 @@ functionality and remains fully operational in secure offline or local environme
 <hr>
 
 <h2 id="team">👥 Team</h2>
-<p>
-TextMorph can be maintained by a diverse team of developers, machine learning engineers, and UX 
-designers. Each team member contributes unique skills—from model integration and training to 
-API development, interface design, and technical writing. The structure encourages 
-collaboration and ensures that the system remains well-documented, well-maintained, and 
-constantly evolving with user needs.
-</p>
+
+<table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; margin-top: 10px; width: 100%;">
+  <tr style="background-color: #f2f2f2; font-weight: bold; text-align: left;">
+    <th>Name</th>
+    <th>Contribution</th>
+    <th>GitHub</th>
+  </tr>
+
+  <tr>
+    <td>Name</td>
+    <td>Implemented JWT-based authentication, user profiles, and session management.</td>
+    <td><a href="#" target="_blank">GitHub</a></td>
+  </tr>
+
+  <tr>
+    <td>Name</td>
+    <td>Designed and developed the UI/UX, dashboard layout, and navigation flow.</td>
+    <td><a href="#" target="_blank">GitHub</a></td>
+  </tr>
+
+  <tr>
+    <td>Name</td>
+    <td>Integrated summarization and paraphrasing models and optimized inference performance.</td>
+    <td><a href="#" target="_blank">GitHub</a></td>
+  </tr>
+
+  <tr>
+    <td>Name</td>
+    <td>Integrated summarization and paraphrasing models and optimized inference performance.</td>
+    <td><a href="#" target="_blank">GitHub</a></td>
+  </tr>
+
+  <tr>
+    <td>Name</td>
+    <td>Integrated summarization and paraphrasing models and optimized inference performance.</td>
+    <td><a href="#" target="_blank">GitHub</a></td>
+  </tr>
+</table>
 
 <hr>
 
@@ -408,6 +439,7 @@ and personal development.
 
 </body>
 </html>
+
 
 
 
