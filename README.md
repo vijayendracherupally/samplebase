@@ -8,7 +8,13 @@
 <body>
 
 <h1>✨ TextMorph — AI-powered Content Simplification, Summarization & Paraphrasing</h1>
-<p>Transform long and complex text into clear, readable content using modern NLP models. Simple UI, powerful backend. 🚀</p>
+<p>
+TextMorph is an AI-driven text processing system designed to make complex content more understandable, 
+structured, and reader-friendly. Built around state-of-the-art NLP models, the platform transforms 
+dense writing into clearer formats without losing meaning or context. Whether used by students, 
+researchers, writers, or professionals, TextMorph provides a seamless way to simplify, summarize, 
+or rewrite content with exceptional quality.
+</p>
 
 <nav>
   <a href="#usage">Get Started</a> |
@@ -18,7 +24,6 @@
 </nav>
 
 <hr>
-
 
 <h2>📑 Table of Contents</h2>
 <ul>
@@ -36,171 +41,225 @@
   <li><a href="#license">License</a></li>
 </ul>
 
+<hr>
 
 <h2 id="overview">📘 Overview</h2>
-<p>TextMorph is a lightweight NLP suite designed to simplify, rewrite, and summarize text with AI. Built with practical components and easy expandability.</p>
-
-<ul>
-  <li>⚡ Streamlit UI</li>
-  <li>🧠 Hugging Face Transformers</li>
-  <li>🎯 FLAN-T5 (domain-aware)</li>
-  <li>🗂️ SQLite for storage</li>
-  <li>🐳 Docker-ready design</li>
-</ul>
+<p>
+TextMorph was designed to address a common challenge: working with long, technical, or poorly structured 
+text. Many students and professionals struggle to condense large amounts of information into clear, 
+understandable summaries, while others require paraphrasing tools that preserve meaning but enhance 
+readability. TextMorph solves these problems by combining an intuitive interface with advanced language 
+models that excel at understanding context, tone, and linguistic structure.
+</p>
+<p>
+Unlike traditional summarizers or paraphrasers that rely on static rules, TextMorph adapts to the content 
+it processes. The system supports multiple domains, such as academic research, medical information, news 
+articles, and legal documents. Each domain can be paired with a specialized, fine-tuned model that delivers 
+better accuracy and improves the usefulness of generated outputs. This allows the platform to transform 
+highly technical documents while ensuring the integrity of the information remains intact.
+</p>
+<p>
+The platform’s goal is to democratize access to high-quality NLP tools. Users do not need a background 
+in machine learning; instead, they interact with a clean web interface powered by Streamlit, where text 
+processing is as simple as entering content and choosing the desired transformation. The system is portable, 
+cloud-ready, and optimized for CUDA or CPU environments, making it adaptable for research labs, classrooms, 
+content teams, and enterprise environments.
+</p>
 
 <hr>
 
 <h2 id="features">🔧 Key Features</h2>
 
 <h3>👤 User Features</h3>
-<ul>
-  <li>🔐 Secure Authentication — JWT login, registration, OTP recovery.</li>
-  <li>📊 Readability Analyzer — Flesch, Gunning Fog, SMOG, Coleman-Liau.</li>
-  <li>📝 Summarization — short / medium / long lengths.</li>
-  <li>🔄 Paraphrasing — simple, neutral, advanced styles.</li>
-  <li>🆚 Side-by-Side Comparison.</li>
-  <li>💾 History & ⭐ Feedback system.</li>
-  <li>⚙️ Profile Management.</li>
-</ul>
+<p>
+TextMorph provides a smooth and intuitive experience for everyday users. Upon logging in, users enter a 
+personal workspace that stores their previous transformations, preferences, and history. The core 
+functionality revolves around text input—either by pasting content or uploading files. The system supports 
+PDFs, documents, and plain text, automatically extracting readable content for processing. Once the text 
+is loaded, users can choose from several transformation modes, such as summarization, rewriting, or 
+simplification.
+</p>
+<p>
+Each transformation is performed using advanced NLP models capable of understanding both context and 
+semantic meaning. The output is shown alongside the original text, making it easier for users to compare 
+changes. The readability analysis component creates a detailed breakdown of sentence complexity, reading 
+difficulty, and structural flow, helping users refine or better understand the generated content.
+</p>
+<p>
+A built-in feedback system allows users to express how helpful a generated result was. This feedback 
+can guide future development and model adjustments. Combined with automatic history saving, users have 
+access to a complete record of their transformations, enabling long-term use for research, writing, or 
+study tasks.
+</p>
 
 <h3>🛠️ Admin Features</h3>
-<ul>
-  <li>📥 Load domain-specific models.</li>
-  <li>👑 Admin account limits.</li>
-  <li>📈 Usage Analytics.</li>
-  <li>💬 Feedback monitoring.</li>
-  <li>🔍 Global search in history.</li>
-  <li>🧾 Full audit visibility.</li>
-  <li>♻️ Hot-swap models.</li>
-</ul>
+<p>
+Administrators have access to a more comprehensive dashboard where they can monitor the entire platform's 
+activity. They can upload new domain-specific models, ensuring the system evolves as new datasets or 
+applications arise. Admins can observe user engagement, track model performance, analyze trending topics, 
+and study the types of content being processed. These insights help maintain the quality and relevance of 
+the system's outputs.
+</p>
+<p>
+Security logs and audit trails allow administrators to review important actions, such as logins, failed 
+attempts, and system adjustments. The global search tool lets admins locate any previous summaries or 
+paraphrases, helping with compliance or academic monitoring when needed. Limiting the number of admin 
+accounts enhances security and ensures that the system is managed responsibly.
+</p>
 
 <hr>
 
 <h2 id="installation">⚙️ Installation</h2>
-
-<pre>
-git clone &lt;repository-link&gt;
-cd TextMorph
-pip install -r requirements.txt
-streamlit run app.py
-</pre>
-
-<p>📁 Models should be stored in Google Drive:</p>
-
-<pre>/content/drive/MyDrive/flan_models/</pre>
-
-<p>Examples: <code>flan_t5_academic_1k</code>, <code>academic_1k</code></p>
+<p>
+Installing TextMorph is straightforward and designed to cater to users from various technical backgrounds. 
+Once the repository is downloaded, users only need to install the required Python packages through the 
+provided <code>requirements.txt</code>. The Streamlit interface requires no additional setup, and launching 
+the app opens an interactive web dashboard in the browser. 
+</p>
+<p>
+For users working on cloud platforms such as Google Colab, the system integrates seamlessly with Google 
+Drive. Models can be stored remotely, allowing users to access large fine-tuned weights without needing 
+local storage. This enables large-scale experiments and production-like workflows even on lightweight 
+devices such as Chromebooks.
+</p>
 
 <hr>
 
 <h2 id="usage">🚀 Usage Guide</h2>
-
-<ol>
-  <li>Run the app: <code>streamlit run app.py</code> ⚡</li>
-  <li>Create/login account 🔐</li>
-  <li>Select domain & load model 🎯</li>
-  <li>Paste text or upload file 📄</li>
-  <li>Choose Summarize / Paraphrase 🔄</li>
-  <li>Review results ✨</li>
-  <li>Save history & give feedback ⭐</li>
-  <li>Admins view analytics 📊</li>
-</ol>
+<p>
+Using TextMorph begins with authentication. Once inside, the user is guided through a streamlined workflow 
+that starts with selecting the domain or model best suited for their task. The interface supports both 
+short text entries and long-form documents. Users can select summarization length, rewriting style, tone, 
+and processing preferences before generating results. 
+</p>
+<p>
+The platform processes text in seconds, providing refined output along with structured comparisons 
+that highlight differences between the original and generated content. Users can revise input text, retry 
+operations, adjust parameters, or save the results for future use. All previous work is accessible in the 
+History panel, organized chronologically to help users track their progress over time.
+</p>
 
 <hr>
 
 <h2 id="architecture">🏗️ Architecture</h2>
-<p>Simple and modular architecture focusing on accessibility and performance.</p>
-
-<table>
-<tr><th>Component</th><th>Responsibility</th></tr>
-<tr><td>🌐 Streamlit UI</td><td>User interaction & admin panel</td></tr>
-<tr><td>🤖 ML Engine</td><td>Tokenization & generation</td></tr>
-<tr><td>🔒 Google Drive</td><td>Model storage</td></tr>
-<tr><td>🗄️ SQLite</td><td>History & feedback</td></tr>
-</table>
+<p>
+TextMorph follows a layered architecture that separates user interaction, model inference, and data 
+management. This modular design ensures that each component can be optimized independently. The Streamlit 
+frontend handles visual rendering and input collection. It communicates with the model processing layer, 
+which handles tokenization, generation, and evaluation using modern Transformer architectures.
+</p>
+<p>
+Google Drive is utilized as a flexible model repository, allowing users to store multiple fine-tuned 
+variants without bundling them directly into the application. SQLite serves as the internal database for 
+user sessions, text histories, and logs. This lightweight database makes TextMorph portable and 
+self-contained, ideal for offline environments or small-scale deployments where setting up a full 
+database server would be unnecessary.
+</p>
+<p>
+This architecture also simplifies Docker deployment. The application can be containerized easily, with 
+external models mounted as volumes or downloaded on startup. Future versions plan to introduce a 
+FastAPI-based backend to separate UI from inference for improved performance and scaling.
+</p>
 
 <hr>
 
 <h2 id="models">🧩 Models & Loading</h2>
-
-<table>
-<tr><th>Model</th><th>Purpose</th><th>Notes</th></tr>
-<tr><td>FLAN-T5</td><td>Summarization & paraphrasing</td><td>Domain tuned</td></tr>
-<tr><td>Pegasus</td><td>Summarization & paraphrasing</td><td>Optional</td></tr>
-<tr><td>BART</td><td>Summarization & paraphrasing</td><td>Optional</td></tr>
-</table>
+<p>
+TextMorph supports several Transformer models from the Hugging Face ecosystem. The primary model, 
+FLAN-T5, excels in both summarization and paraphrasing tasks, particularly when fine-tuned on 
+domain-specific datasets. Pegasus, known for its abstractive summarization capabilities, performs 
+well on structured, information-rich documents such as research papers or news reports. BART provides a 
+strong baseline for paraphrasing and rewriting due to its balanced encoder-decoder architecture.
+</p>
+<p>
+Models are loaded dynamically through the Transformers library, allowing TextMorph to initialize 
+only the required models at runtime. This ensures efficient memory usage and provides flexibility for 
+adding new models without changing the core application. Custom models stored in Google Drive can be 
+loaded with a single click, enabling highly personalized workflows for different academic or 
+professional environments.
+</p>
 
 <hr>
 
 <h2 id="datasets">📚 Datasets & Evaluation</h2>
-
-<ul>
-  <li>📘 academic->ccdv/arxiv-summarization</li>
-  <li>📰 news->cnn_dailymail</li>
-  <li>📝 medical->ccdv/pubmed-summarization</li>
-  <li>📘 legal->billsum</li>
-</ul>
-
-<p>📏 Metrics used: ROUGE-L, BLEU, Readability delta.</p>
+<p>
+To ensure the highest possible output quality, TextMorph incorporates evaluation principles derived 
+from widely recognized datasets in summarization and paraphrasing research. Each dataset represents a 
+unique writing style and vocabulary range: ArXiv for scientific writing, CNN/DailyMail for 
+journalistic content, PubMed for medical literature, and BillSum for legal text. 
+</p>
+<p>
+Evaluation is conducted through multiple metrics. ROUGE and BLEU measure how closely outputs match 
+reference summaries, while lexical diversity and readability metrics analyze clarity and style. 
+This combination ensures that TextMorph produces text that is not only accurate but also easy to 
+understand.
+</p>
 
 <hr>
 
 <h2 id="roadmap">🛣️ Roadmap</h2>
-
-<ul>
-  <li>🖨️ OCR & PDF extraction</li>
-  <li>🌍 Multilingual capabilities</li>
-  <li>📦 Batch/large-file support</li>
-  <li>⚡ FastAPI backend</li>
-  <li>⚙️ ONNX acceleration</li>
-  <li>🐳 GPU-powered Docker images</li>
-</ul>
+<p>
+Future updates aim to transform TextMorph into a more robust, multi-functional NLP platform. 
+Upcoming features include more advanced PDF extraction techniques capable of recognizing 
+headings, tables, and multi-column layouts. Multilingual models will expand support to 
+several global languages. Batch processing will allow users to work with entire folders or 
+document collections at once.
+</p>
+<p>
+A dedicated FastAPI backend is in development to support scalable deployments and expert 
+workflows. Optimizations using ONNX and GPU-accelerated Docker images will significantly reduce 
+latency during inference. Additional improvements include customizable user roles, real-time 
+collaboration, and integrations with educational systems or enterprise tools.
+</p>
 
 <hr>
 
-<h2 id="screenshots">🖼️ Screenshots (Placeholders)</h2>
-<ul>
-  <li>🔑 Login</li>
-  <li>📊 Dashboard</li>
-  <li>📈 Graphs</li>
-  <li>📝 Summarization Output</li>
-  <li>📉 Analytics Panel</li>
-  <li>📜 History View</li>
-</ul>
+<h2 id="screenshots">🖼️ Screenshots</h2>
+<p>
+The application includes several intuitive screens designed for clarity and productivity. 
+The login interface guides users through secure access. The main dashboard contains quick 
+navigation options to load models, upload files, or begin text transformation. The analytics 
+panel helps administrators monitor global system activity through visual charts. The 
+summarization and paraphrasing pages include structured views that allow users to compare 
+original and transformed content effortlessly.
+</p>
 
 <hr>
 
 <h2 id="security">🔐 Security & Privacy</h2>
-
-<ul>
-  <li>🔑 JWT authentication</li>
-  <li>📧 OTP via SMTP</li>
-  <li>📜 Audit logs</li>
-  <li>🔒 Use HTTPS in production</li>
-</ul>
-
-<hr>
-
-
-<hr>
-
-<h2>👥 Team</h2>
-
-<table>
-<tr><th>Name</th><th>Role</th><th>Responsibility</th></tr>
-<tr><td>Add Name</td><td>ML Engineer 🤖</td><td>Model integration</td></tr>
-<tr><td>Add Name</td><td>Backend Developer 🔧</td><td>API & Auth</td></tr>
-<tr><td>Add Name</td><td>Frontend Developer 🎨</td><td>UI/UX</td></tr>
-<tr><td>Add Name</td><td>Documentation ✍️</td><td>Reports & README</td></tr>
-</table>
+<p>
+TextMorph integrates multiple layers of security to protect user information. All passwords are 
+securely hashed before storage, ensuring that raw credentials are never exposed. JWT-based 
+authentication maintains safe and seamless user sessions, with tokens refreshed as needed. 
+For account recovery, users receive time-sensitive OTP codes that confirm their identity.
+</p>
+<p>
+The system keeps detailed audit logs that record essential actions such as logins, failed 
+attempts, and administrative operations. These logs provide transparency and help maintain a 
+secure environment. For production deployments, HTTPS is recommended to ensure encrypted 
+communication and prevent interception of sensitive data.
+</p>
 
 <hr>
 
-<h2>📄 License</h2>
-<p>MIT License — free to use, modify and share. 👐</p>
+<h2 id="team">👥 Team</h2>
+<p>
+TextMorph can be maintained by a diverse team of developers, machine learning engineers, and UX 
+designers. Each team member contributes unique skills—from model integration and training to 
+API development, interface design, and technical writing. The structure encourages 
+collaboration and ensures that the system remains well-documented, well-maintained, and 
+constantly evolving with user needs.
+</p>
+
+<hr>
+
+<h2 id="license">📄 License</h2>
+<p>
+TextMorph is released under the MIT License, granting users the freedom to use, modify, and 
+redistribute the project with minimal restrictions. The license encourages community 
+contributions and ensures the project remains open and accessible for education, research, 
+and personal development.
+</p>
 
 </body>
 </html>
-
-
-
