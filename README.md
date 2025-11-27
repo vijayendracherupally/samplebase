@@ -118,9 +118,10 @@ streamlit run app.py
 <h2 id="datasets">📚 Datasets & Evaluation</h2>
 
 <ul>
-  <li>📘 WikiAuto — simplification</li>
-  <li>📰 Newsela — readability levels</li>
-  <li>📝 ASSET — paraphrasing</li>
+  <li>📘 academic->ccdv/arxiv-summarization</li>
+  <li>📰 news->cnn_dailymail</li>
+  <li>📝 medical->ccdv/pubmed-summarization</li>
+  <li>📘 legal->billsum</li>
 </ul>
 
 <p>📏 Metrics used: ROUGE-L, BLEU, Readability delta.</p>
@@ -163,23 +164,6 @@ streamlit run app.py
 
 <hr>
 
-<h2>📁 Project Structure</h2>
-
-<pre>
-TextMorph/
-├── app.py
-├── backend/
-│   ├── auth.py
-│   ├── models.py
-│   ├── ml_engine.py
-│   ├── readability.py
-│   ├── history.py
-│   ├── feedback.py
-│   └── admin.py
-├── requirements.txt
-├── Dockerfile
-└── docs/
-</pre>
 
 <hr>
 
@@ -200,3 +184,4 @@ TextMorph/
 
 </body>
 </html>
+
